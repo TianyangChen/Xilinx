@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator O.87xd
+# Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION O.87xd
+DATE            01/06/2015 - 12:09
+SOURCE          C:\Xilinx\smart_car\smart_car_burn.mcs
+DEVICE          XCF04S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x06E0D03C
+START_ADDRESS   0x00000000 END_ADDRESS 0x00011BDB DIRECTION_UP   "C:/Xilinx/smart_car/monitor.bit" 3s100ecp132

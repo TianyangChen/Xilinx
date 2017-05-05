@@ -1,0 +1,60 @@
+
+#Created by Constraints Editor (xc3s100e-cp132-4) - 2015/01/05
+NET "clk_in" TNM_NET = "clk_in";
+TIMESPEC TS_clk_in = PERIOD "clk_in" 20 ns HIGH 50 %;
+
+
+NET "clk_in" LOC = B8;
+NET "infrared_sensor[0]" LOC = D12;
+NET "infrared_sensor[1]" LOC = C13;
+NET "infrared_sensor[2]" LOC = A13;
+NET "led_out[0]" LOC = M5;
+NET "led_out[1]" LOC = M11;
+NET "led_out[2]" LOC = P7;
+NET "led_out[3]" LOC = P6;
+NET "led_out[4]" LOC = N5;
+NET "led_out[5]" LOC = N4;
+NET "led_out[6]" LOC = P4;
+NET "led_out[7]" LOC = G1;
+NET "seg[0]" LOC = N13;
+NET "seg[1]" LOC = M12;
+NET "seg[2]" LOC = L13;
+NET "seg[3]" LOC = P12;
+NET "seg[4]" LOC = N11;
+NET "seg[5]" LOC = N14;
+NET "seg[6]" LOC = H12;
+NET "seg[7]" LOC = L14;
+NET "sel_out[0]" LOC = F12;
+NET "sel_out[1]" LOC = J12;
+NET "sel_out[2]" LOC = M13;
+NET "sel_out[3]" LOC = K14;
+
+
+NET "infrared_sensor[0]" IOSTANDARD = LVCMOS25;
+NET "infrared_sensor[1]" IOSTANDARD = LVCMOS25;
+NET "infrared_sensor[2]" IOSTANDARD = LVCMOS25;
+NET "led_out[0]" IOSTANDARD = LVCMOS25;
+NET "led_out[1]" IOSTANDARD = LVCMOS25;
+NET "led_out[2]" IOSTANDARD = LVCMOS25;
+NET "led_out[3]" IOSTANDARD = LVCMOS25;
+NET "led_out[4]" IOSTANDARD = LVCMOS25;
+NET "led_out[5]" IOSTANDARD = LVCMOS25;
+NET "led_out[6]" IOSTANDARD = LVCMOS25;
+NET "led_out[7]" IOSTANDARD = LVCMOS25;
+NET "infrared_sensor[1]" DRIVE = 12;
+NET "clk_in" SLEW = FAST;
+
+# PlanAhead Generated physical constraints 
+
+NET "chaoimpulse" LOC = B2;
+NET "chaotime" LOC = A3;
+NET "moshi" LOC = E2;
+NET "pwm_left" LOC = A9;
+NET "pwm_left2" LOC = C5;
+NET "pwm_right" LOC = B7;
+NET "pwm_right2" LOC = B6;
+NET "qianhou[0]" LOC = C12;
+NET "qianhou[1]" LOC = C9;
+NET "qianhou[2]" LOC = A10;
+NET "qianhou[3]" LOC = B9;
+NET "reset" LOC = N3;

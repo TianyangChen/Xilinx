@@ -1,0 +1,76 @@
+Release 13.4 - ngc2edif O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design monitor.ngc ...
+WARNING:NetListWriters:298 - No output is written to monitor.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ch/Mcompar_count_cmp_gt0000_lut<6 : 0>
+   on block monitor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   ch/Mcompar_old_count_1_7_cmp_gt0000_lut<6 : 0> on block monitor is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus led_out_mux0000<7 : 0> on block monitor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus qianhou_mux0000<2 : 0> on block monitor
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file monitor.edif ...
+ngc2edif: Total memory usage is 78856 kilobytes
+
+Release 13.4 - ngc2edif O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design monitor.ngc ...
+WARNING:NetListWriters:298 - No output is written to monitor.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ch/Mcompar_count_cmp_gt0000_lut<6 : 0>
+   on block monitor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   ch/Mcompar_old_count_1_7_cmp_gt0000_lut<6 : 0> on block monitor is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus led_out_mux0000<7 : 0> on block monitor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus qianhou_mux0000<2 : 0> on block monitor
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file monitor.edif ...
+ngc2edif: Total memory usage is 78024 kilobytes
+
+Release 13.4 - ngc2edif O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design monitor.ngc ...
+WARNING:NetListWriters:298 - No output is written to monitor.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ch/Mcompar_count_cmp_gt0000_lut<6 : 0>
+   on block monitor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   ch/Mcompar_old_count_1_7_cmp_gt0000_lut<6 : 0> on block monitor is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file monitor.edif ...
+ngc2edif: Total memory usage is 78856 kilobytes
+
+Release 13.4 - ngc2edif O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design monitor.ngc ...
+WARNING:NetListWriters:298 - No output is written to monitor.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ch/Mcompar_count_cmp_gt0000_lut<6 : 0>
+   on block monitor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   ch/Mcompar_old_count_1_7_cmp_gt0000_lut<6 : 0> on block monitor is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file monitor.edif ...
+ngc2edif: Total memory usage is 77832 kilobytes
+

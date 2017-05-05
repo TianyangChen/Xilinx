@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v13.4 (64-bit)
+# Build 157570 by hdbuild on Fri Dec 16 13:06:31 MST 2011
+# Start of session at: Thu Jan 08 14:59:33 2015
+# Process ID: 8108
+# Log file: C:/Xilinx/smart_car/planAhead_run_1/planAhead.log
+# Journal file: C:/Xilinx/smart_car/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Xilinx/smart_car/pa.fromNetlist.tcl
+exit
+stop_gui

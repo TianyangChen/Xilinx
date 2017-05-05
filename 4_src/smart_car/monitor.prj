@@ -1,0 +1,5 @@
+verilog work "turn_50MHz_1525Hz.v"
+verilog work "BCD_SEG.v"
+verilog work "PWM.v"
+verilog work "chao.v"
+verilog work "monitor.v"

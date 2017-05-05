@@ -1,0 +1,57 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Tue Jan 06 12:05:17 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "chaoimpulse" LOCATE = SITE "B2" LEVEL 1;
+COMP "chaotime" LOCATE = SITE "A3" LEVEL 1;
+COMP "led_out<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "led_out<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led_out<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "led_out<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "led_out<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "qianhou<0>" LOCATE = SITE "C12" LEVEL 1;
+COMP "led_out<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "qianhou<1>" LOCATE = SITE "C9" LEVEL 1;
+COMP "led_out<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "qianhou<2>" LOCATE = SITE "A10" LEVEL 1;
+COMP "led_out<7>" LOCATE = SITE "G1" LEVEL 1;
+COMP "qianhou<3>" LOCATE = SITE "B9" LEVEL 1;
+COMP "infrared_sensor<0>" LOCATE = SITE "D12" LEVEL 1;
+COMP "infrared_sensor<1>" LOCATE = SITE "C13" LEVEL 1;
+COMP "infrared_sensor<2>" LOCATE = SITE "A13" LEVEL 1;
+COMP "pwm_right" LOCATE = SITE "B7" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "N13" LEVEL 1;
+COMP "pwm_right2" LOCATE = SITE "B6" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "M12" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "L13" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "P12" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "N11" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "H12" LEVEL 1;
+COMP "pwm_left" LOCATE = SITE "A9" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "L14" LEVEL 1;
+COMP "moshi" LOCATE = SITE "E2" LEVEL 1;
+COMP "reset" LOCATE = SITE "N3" LEVEL 1;
+COMP "pwm_left2" LOCATE = SITE "C5" LEVEL 1;
+COMP "sel_out<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "B8" LEVEL 1;
+COMP "sel_out<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "sel_out<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "sel_out<3>" LOCATE = SITE "K14" LEVEL 1;
+NET "clk_in_BUFGP/IBUFG" BEL "clk_in_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk_in = BEL "motor_left/func/count_0" BEL "motor_left/func/count_1"
+        BEL "motor_left/func/count_2" BEL "motor_left/func/count_3" BEL
+        "motor_left/func/count_4" BEL "motor_left/func/count_5" BEL
+        "motor_left/func/count_6" BEL "motor_left/func/count_7" BEL
+        "motor_left/func/count_8" BEL "motor_left/func/count_9" BEL
+        "motor_left/func/count_10" BEL "motor_left/func/count_11" BEL
+        "motor_left/func/count_12" BEL "motor_left/func/count_13" BEL
+        "motor_left/func/count_14" BEL "ch/count_12" BEL "ch/count_11" BEL
+        "ch/count_10" BEL "ch/count_9" BEL "ch/count_8" BEL "ch/count_7" BEL
+        "ch/count_6" BEL "ch/count_5" BEL "ch/count_4" BEL "ch/count_3" BEL
+        "ch/count_2" BEL "ch/count_1" BEL "ch/count_0" BEL "ch/chao_clk" BEL
+        "clk_in_BUFGP/BUFG.GCLKMUX" BEL "clk_in_BUFGP/BUFG";
+TS_clk_in = PERIOD TIMEGRP "clk_in" 20 ns HIGH 50%;
+SCHEMATIC END;
+

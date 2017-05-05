@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;chao.v&quot; line 96 </arg>Connection to input port &apos;<arg fmt="%s" index="2">BCD</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;monitor.v&quot; line 124 </arg>Connection to input port &apos;<arg fmt="%s" index="2">zhankongbi</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;monitor.v&quot; line 125 </arg>Connection to input port &apos;<arg fmt="%s" index="2">zhankongbi</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;monitor.v&quot; line 126 </arg>Connection to input port &apos;<arg fmt="%s" index="2">zhankongbi</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;monitor.v&quot; line 127 </arg>Connection to input port &apos;<arg fmt="%s" index="2">zhankongbi</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">zhankongbi_right2&lt;4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">zhankongbi_right&lt;4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">zhankongbi_left2&lt;4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">zhankongbi_left&lt;4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">zhankongbi_right_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">monitor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">zhankongbi_left_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">monitor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">zhankongbi_left_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">monitor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">zhankongbi_right_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">monitor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="old" >Unit &lt;<arg fmt="%s" index="1">monitor</arg>&gt;: instances &lt;<arg fmt="%s" index="2">motor_right</arg>&gt;, &lt;<arg fmt="%s" index="3">motor_right2</arg>&gt; of unit &lt;<arg fmt="%s" index="4">PWM</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="old" >Unit &lt;<arg fmt="%s" index="1">monitor</arg>&gt;: instances &lt;<arg fmt="%s" index="2">motor_left</arg>&gt;, &lt;<arg fmt="%s" index="3">motor_left2</arg>&gt; of unit &lt;<arg fmt="%s" index="4">PWM</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">zhankongbi_left_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">monitor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;zhankongbi_left_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">qianhou_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">monitor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;qianhou_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">qianhou_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">monitor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;qianhou_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">zhankongbi_right_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">monitor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;zhankongbi_right_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">zhankongbi_left_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">monitor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;zhankongbi_left_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">zhankongbi_right_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">monitor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;zhankongbi_right_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2146" delta="old" >In block &lt;<arg fmt="%s" index="1">monitor</arg>&gt;, <arg fmt="%s" index="2">Counter</arg> &lt;<arg fmt="%s" index="3">motor_left/func/count</arg>&gt; </msg>
+
+</messages>
+
