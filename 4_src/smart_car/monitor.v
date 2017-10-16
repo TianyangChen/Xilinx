@@ -32,9 +32,9 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 	wire pwm_left,pwm_left2,pwm_right,pwm_right2,clk_out,chaoimpulse,backward;
 	wire has_obstruction;
 	reg [4:0] zhankongbi_right,zhankongbi_right2,zhankongbi_left,zhankongbi_left2;
-	always @(posedge clk_out)//每 clk_out（ 1525Hz）的上升沿做以下动作
+	always @(posedge clk_out)//in the falling edge of clk_out（ 1525Hz）, do the following operation
 		begin
-			if(reset)//reset 为 1 ，则进行初始化
+			if(reset)//init
 				begin
 					zhankongbi_right=0;
 					zhankongbi_right2=0;
@@ -42,11 +42,11 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 					zhankongbi_left2=0;
 					led_out[7:0]=8'b00000000;
 				end
-			else if(!moshi)//模式开关为 0，则按照黑线走，用红外线监测数据
+			else if(!moshi)//if variable moshi was set to 0，the car will run along the guideline using infrared.
 				begin
 					qianhou=4'b0000;
-					case(infrared_sensor[2:0])//红外线检测到的数据
-					3'b010:	begin //中间的检测管检测，则直走
+					case(infrared_sensor[2:0])//the data from infrared sensor
+					3'b010:	begin //when the middle sensor detects guideline, go straight
 									qianhou=4'b0000;
 									zhankongbi_right=31;
 									zhankongbi_left=31;
@@ -55,7 +55,7 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 									led_out=8'b0000_0000;
 								end
 						
-					3'b001,3'b011:	begin //需要往右拐，右轮反转，左轮正转
+					3'b001,3'b011:	begin //turn right, left wheels spin forward, right wheels spin backward
 											qianhou=4'b1010;
 											zhankongbi_right=0;
 											zhankongbi_right2=0;
@@ -63,7 +63,7 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 											zhankongbi_left2=31;
 											led_out=8'b00000011;
 										end
-					3'b100,3'b110:	begin//需要往左拐，右轮正转，左轮反转
+					3'b100,3'b110:	begin//turn left, left wheels spin backward, right wheels spin forward
 											qianhou=4'b0101;
 											zhankongbi_right=31;
 											zhankongbi_right2=31;
@@ -71,7 +71,7 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 											zhankongbi_left2 =0;
 											led_out=8'b11000000;
 										end
-					3'b000:	begin //什么都没检测到，停在那里。
+					3'b000:	begin //detect nothing, stop
 										qianhou=4'b0000;
 										zhankongbi_right=0;
 										zhankongbi_right2=0;
@@ -79,7 +79,7 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 										zhankongbi_left2=0;
 										led_out=8'b1111_1111;
 									end
-					default:	begin//其他的情况慢速走
+					default:	begin//other cases run slowly
 									qianhou=4'b0000;
 									zhankongbi_right=31;
 									zhankongbi_right2=31;
@@ -91,7 +91,7 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 			else if(moshi)
 				begin
 					if(has_obstruction==1&&backward==1)
-						begin// 有障碍物，需要后退， qianhou 设置成 1111
+						begin// the barrier is near, need to go back
 							qianhou=4'b1111;
 							zhankongbi_right=10;
 							zhankongbi_left=10;
@@ -100,7 +100,7 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 							led_out=8'b1111_1111;
 						end
 					else if(has_obstruction==1&&backward==0)
-						begin//有障碍物，只需要转方向（属于急转，一个往前，另一个往后转）
+						begin//there is barrier, but we can make a turn to avoid it
 							qianhou=4'b1010; 
 							zhankongbi_right=0;
 							zhankongbi_left=31;
@@ -109,7 +109,7 @@ module	monitor(clk_in,reset,moshi,infrared_sensor,pwm_right,pwm_right2,pwm_left,
 							led_out=8'b1111_0000;
 						end
 					else
-						begin// 没有遇到障碍物，往前转
+						begin// no barrier, go straight
 							qianhou=4'b0000;
 							zhankongbi_right=31;
 							zhankongbi_left=31;

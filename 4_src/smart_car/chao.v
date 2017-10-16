@@ -75,8 +75,8 @@
 				begin
 					if(BCD!=0)
 						begin
-							jieguo=BCD;//chaotime 为 0 的时候，将加到的数据送给 jieguo
-							if(jieguo[7:4]>2)has_obstruction=0;//判断是否要后退或急转
+							jieguo=BCD;//when chaotime become 0, pass the data to jieguo
+							if(jieguo[7:4]>2)has_obstruction=0;// determine wether it needs to go back or make a sharp turn
 							else if((jieguo[7:4] <3)&&(jieguo[11:8]==0))
 								begin
 									has_obstruction=1;
@@ -86,8 +86,8 @@
 						end
 					BCD=0;
 				end
-			case(count_1[6:5])//首先把最低位显示，然后显示最高位，但速度很快
-			3:devided=jieguo[15:12]; //人眼看不出来
+			case(count_1[6:5])//first display the low-order digit then high-order digit, but frequency is high
+			3:devided=jieguo[15:12]; 
 			2:devided=jieguo[11:8];
 			1:devided=jieguo[7:4];
 			0:devided=jieguo[3:0];

@@ -21,7 +21,7 @@
 module turn_50MHz_1525Hz(clk_in, clk_out);
 	input clk_in;
 	output clk_out;
-	reg [14:0] count=0;//利用一个计数器，当数到 8096 就出现高电平。
+	reg [14:0] count=0;//set a counter, when it becomes 8096, output high level
 	always @(posedge clk_in) 
 		count=count+1;
 	assign clk_out=count[14];

@@ -27,7 +27,7 @@ module BCD_SEG(BCD,SEL_IN,SEG,SEL_OUT);
 	always @(BCD)
 		begin
 			case(BCD)
-			4'd0:SEG=8'b00000011; //显示 0，需要 00000011
+			4'd0:SEG=8'b00000011; //display 0
 			4'd1:SEG=8'b10011111;
 			4'd2:SEG=8'b00100101;
 			4'd3:SEG=8'b00001101;
@@ -46,7 +46,7 @@ module BCD_SEG(BCD,SEL_IN,SEG,SEL_OUT);
 			default:SEG=8'b11111111;
 			endcase
 		end
-	assign SEL_OUT[0]=~((~SEL_IN[1])&&(~SEL_IN[0]));//SEL_IN 信号为 0：输出为 1110
+	assign SEL_OUT[0]=~((~SEL_IN[1])&&(~SEL_IN[0]));//SEL_IN signal is 0：output is 1110
 	assign SEL_OUT[1]=~((~SEL_IN[1])&&(SEL_IN[0]));
 	assign SEL_OUT[2]=~((SEL_IN[1])&&(~SEL_IN[0]));
 	assign SEL_OUT[3]=~((SEL_IN[1])&&(SEL_IN[0]));
